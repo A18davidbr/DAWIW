@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>
+      div#body  /*Define una identificador "body" asociado a un elemento <div>. Es la posici�n del cuerpo de la p�gina (barra lateral m�s contenido) */
+     {
+        margin: auto auto auto auto; /* top right bottom left: equivale a poner un s�lo auto */
+        width: 710px; /* El ancho del estilo lo coloca en 710px */
+      }
+      div#header /*Define una identificador "header" asociado a un elemento <div>. Es la posici�n de la cabecera */
+    {
+        margin: 10px auto 10px auto;
+        width: 710px;
+        border: dotted 3px rgb(0, 217, 255);
+        border-style: solid;
+        border-radius: 10px;
+        text-align: center;
+      }
+      div#sidebar {
+        display: none;
+        border: solid 1px #cfc;
+        text-align: left;
+      }
+
+      body.main-sidebar div#main,
+      body.sidebar-main div#main {
+          /*main*/
+        width: 490px;
+        
+      }
+
+      body.main-sidebar div#sidebar,
+      body.sidebar-main div#sidebar {
+          /*menu*/
+        display: block;
+        width: 200px;
+        border: solid 1px #ccc;
+        padding-left: 15px;
+        
+      }
+      body.main-sidebar div#main, body.main-sidebar div#sidebar  /*Main-sidebar. Este estilo coloca el sidebar a la derecha y el main a la izquierda */
+    {
+        /*Este estilo coloca el sidebar a la derecha y el main a la izquierda*/
+        float: left;
+        border: solid 1px #ccc;
+        
+        
+      }
+      body.sidebar-main div#main, body.sidebar-main div#sidebar /*Sidebar-main. Este estilo coloca el sidebar a la izquierda y el main a la derecha*/
+    {
+        /*Sidebar-main. Este estilo coloca el sidebar a la izquierda y el main a la derecha*/
+        float: right;
+        border: dotted 1px greenyellow;
+        margin-bottom: 10px;
+        
+      }
+
+      #footer {
+        margin: 10px auto 10px auto;
+        width: 710px;
+        border: dotted 3px greenyellow;
+        border-style: solid;
+        border-radius: 10px;
+        clear: both;
+        text-align: center;
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+        right: 0px;
+        
+      }
+
+      #sidebar ul {
+            list-style-type: none;
+            margin:2px;
+            padding:2px;
+            
+      }
+
+      
+
+    </style>
+  </head>
+
+  <body class="sidebar-main">
+    <div id="header"><i>Cabecera. RESTAURANTE: El muslito</i></div>
+
+    <div id="body">
+      <div id="main">
+        Este restaurante es una de las referencias gastronómicas del esta zona.
+        [...]
+        Este restaurante es una de las referencias gastronómicas del esta zona.
+        [...]
+        Este restaurante es una de las referencias gastronómicas del esta zona.
+        [...]
+        Este restaurante es una de las referencias gastronómicas del esta zona.
+        [...]
+        Este restaurante es una de las referencias gastronómicas del esta zona.
+        [...]
+      </div>
+      <div id="sidebar">Menú principal
+        <ul>
+          <li><a href="Actividad 2- 6 propuesta.html">Inicio</a></li>
+          <li><a href="Actividad 2- 6 propuesta.html">Fotos</a></li>
+          <li><a href="Actividad 2- 6 propuesta.html">Carta</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="footer">Pie de página</div>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi pagina</title>
+    <style type="text/css">
+        header,
+        section,
+        footer,
+        aside,
+        nav,
+        article,
+        details {
+            display: block;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        section {
+            width: 600px;
+            margin: 15px auto;
+            text-align: left;
+            border: 3px solid;
+            border-color: blue;
+            padding-left: 20px;
+
+        }
+        header {
+            background-image: radial-gradient(yellow, white, yellow);
+            border: 1px solid #d2df20be;
+            padding: 20px;
+        }
+        nav {
+            background: #cccccc;
+            padding: 5px 15px;
+            list-style-type: none;
+            /*position: fixed;
+            bottom: 10;*/
+            position: sticky;
+            top: 0;
+
+        }
+
+        .menu{
+            background-color: rosybrown;  
+            padding: 5px 15px;
+            list-style-type: none;
+            top:0;
+
+            }
+
+        .menu li {
+            display: inline-block;
+            list-style: none;
+            padding: 5px;
+            font: bold 14px verdana, sans-serif;
+            border: 3px solid black;
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 3px 5px rgb(8, 8, 15);
+            margin: 8px;
+            background-color: rgba(248, 192, 7, 0.897);
+        }
+
+        .menu li a{
+            display: block;
+        }
+
+        .menu li:hover{
+            /*background-color:rgb(235, 255, 55);
+            box-shadow: 1px 3px rgb(8, 8, 15);*/
+            position: relative;
+            top:5px;
+            background-image: linear-gradient(to right, rgb(250, 78, 213), rgba(179, 164, 250, 0.959));
+        }
+
+        .vertical ul{
+            list-style-type: none;
+            margin:0;
+            padding:8px;
+            width:120px;
+            position: fixed;
+            float:left;
+
+        }
+
+        .vertical li {
+            display:block;
+            padding: 4px 1px;
+            text-align: left;
+            text-decoration: none;
+            border-bottom: 1px solid red;
+            
+        }
+
+        .vertical li a:hover{
+            display:block;
+            padding: 8px 1px;
+            text-align: left;
+            left: 5px;
+            text-decoration: none;
+            background-image: linear-gradient(to right, rgb(250, 78, 213), rgba(179, 164, 250, 0.959));
+            
+        }
+
+        nav li {
+            display: inline-block;
+            list-style: none;
+            padding: 5px;
+            font: bold 14px verdana, sans-serif;
+            border-right: 1px solid rgb(253,3,3);
+        }
+        nav li:last-child{
+            border-right:none; 
+        }
+        a{
+            text-decoration:none; 
+        }
+        nav li a{
+            display: block;
+            padding: 8px;
+            background-color: #cccccc;
+
+        }
+        nav li a:hover{
+            background-color: #facd06;
+            font-size: 16;
+            color: azure;
+            text-decoration: underline;
+        }
+        aside {
+            float: left;
+            width: 200px;
+            margin: 20px 0px;
+            padding: 20px;
+            background: #cccccc; 
+        }
+        footer{
+            clear: both;
+            text-align: center;
+            border-top: 2px solid #999999;
+            position: sticky;
+            padding: 20px 0px;
+            bottom: 0;
+            left: 0;
+            height: 50px;
+            width: 100%;
+            background: #cccccc;
+        }
+        .active{
+            background-color: aqua;
+        }
+        .about{
+            background-color: black;
+            color: cornsilk;            
+        }
+        a.about:hover{
+            background-color: white;
+            color: black;
+        }
+
+    </style>
+
+
+</head>
+<!-- FORMATO PARA COMENTAR EN HTML -->
+<body>
+    <header>
+        <h1>A Miña páxina web</h1>
+    </header>
+    <!--<nav> -->
+    <div class="vertical">
+        <ul>
+            <li><a href="2.html">Inicio</a></li>
+            <li><a href="2.html">Imagenes</a></li>
+            <li><a href="2.html">Videos</a></li>
+            <li><a href="2.html">Contactos</a></li>
+            <li style="float:bottom"><a class="about" href="2.html">About</a></li>
+            <!--<li style="float:rigth"><a class="about" href="2.html">About</a></li>-->
+        </ul>
+    </div>
+    <!-- </nav> -->
+    <section>
+        <h2>Este es el cuerpo de la pagina</h2>
+        <article> A miña publicación N 1
+            <header>
+                <h1>Titulo1</h1>
+            </header>
+            Mi publicacion 1
+        </article>
+        <article>Mi publicacion 1</article>
+
+        <details>
+            <summary>Pulse para expandir </summary>
+            <p>hola</p>
+        </details>
+        <h3>
+            La falla de la presa Brumadinho ocurrió tres años y dos meses después del desastre de la presa Mariana, que mató a 19 personas y destruyó la aldea de Bento Rodrigues. El desastre de Mariana es considerado el peor desastre ambiental en la historia de Brasil y todavía está bajo investigación. Los expertos dicen que las débiles estructuras regulatorias y las brechas regulatorias de Brasil permitieron el fracaso de la presa. Tres años después del colapso de la presa Mariana, las compañías involucradas en ese desastre ambiental han pagado solo el 3,4% de R $ 785 millones en multas. En el momento del desastre de la presa Mariana en noviembre de 2015, el departamento a cargo de inspeccionar las operaciones mineras en el estado de Minas Gerais, el Departamento Nacional de Producción Mineral (DNPM), estaba preocupado por la jubilación de otro 40% de los empleados públicos. el curso de los próximos dos años.
+        <br/>
+        La falla de la presa Brumadinho ocurrió tres años y dos meses después del desastre de la presa Mariana, que mató a 19 personas y destruyó la aldea de Bento Rodrigues. El desastre de Mariana es considerado el peor desastre ambiental en la historia de Brasil y todavía está bajo investigación. Los expertos dicen que las débiles estructuras regulatorias y las brechas regulatorias de Brasil permitieron el fracaso de la presa. Tres años después del colapso de la presa Mariana, las compañías involucradas en ese desastre ambiental han pagado solo el 3,4% de R $ 785 millones en multas. En el momento del desastre de la presa Mariana en noviembre de 2015, el departamento a cargo de inspeccionar las operaciones mineras en el estado de Minas Gerais, el Departamento Nacional de Producción Mineral (DNPM), estaba preocupado por la jubilación de otro 40% de los empleados públicos. el curso de los próximos dos años.
+        <br/>
+        La falla de la presa Brumadinho ocurrió tres años y dos meses después del desastre de la presa Mariana, que mató a 19 personas y destruyó la aldea de Bento Rodrigues. El desastre de Mariana es considerado el peor desastre ambiental en la historia de Brasil y todavía está bajo investigación. Los expertos dicen que las débiles estructuras regulatorias y las brechas regulatorias de Brasil permitieron el fracaso de la presa. Tres años después del colapso de la presa Mariana, las compañías involucradas en ese desastre ambiental han pagado solo el 3,4% de R $ 785 millones en multas. En el momento del desastre de la presa Mariana en noviembre de 2015, el departamento a cargo de inspeccionar las operaciones mineras en el estado de Minas Gerais, el Departamento Nacional de Producción Mineral (DNPM), estaba preocupado por la jubilación de otro 40% de los empleados públicos. el curso de los próximos dos años.
+        <br/>
+        La falla de la presa Brumadinho ocurrió tres años y dos meses después del desastre de la presa Mariana, que mató a 19 personas y destruyó la aldea de Bento Rodrigues. El desastre de Mariana es considerado el peor desastre ambiental en la historia de Brasil y todavía está bajo investigación. Los expertos dicen que las débiles estructuras regulatorias y las brechas regulatorias de Brasil permitieron el fracaso de la presa. Tres años después del colapso de la presa Mariana, las compañías involucradas en ese desastre ambiental han pagado solo el 3,4% de R $ 785 millones en multas. En el momento del desastre de la presa Mariana en noviembre de 2015, el departamento a cargo de inspeccionar las operaciones mineras en el estado de Minas Gerais, el Departamento Nacional de Producción Mineral (DNPM), estaba preocupado por la jubilación de otro 40% de los empleados públicos. el curso de los próximos dos años.
+        <br/>
+        La falla de la presa Brumadinho ocurrió tres años y dos meses después del desastre de la presa Mariana, que mató a 19 personas y destruyó la aldea de Bento Rodrigues. El desastre de Mariana es considerado el peor desastre ambiental en la historia de Brasil y todavía está bajo investigación. Los expertos dicen que las débiles estructuras regulatorias y las brechas regulatorias de Brasil permitieron el fracaso de la presa. Tres años después del colapso de la presa Mariana, las compañías involucradas en ese desastre ambiental han pagado solo el 3,4% de R $ 785 millones en multas. En el momento del desastre de la presa Mariana en noviembre de 2015, el departamento a cargo de inspeccionar las operaciones mineras en el estado de Minas Gerais, el Departamento Nacional de Producción Mineral (DNPM), estaba preocupado por la jubilación de otro 40% de los empleados públicos. el curso de los próximos dos años.
+        <br/>
+        La falla de la presa Brumadinho ocurrió tres años y dos meses después del desastre de la presa Mariana, que mató a 19 personas y destruyó la aldea de Bento Rodrigues. El desastre de Mariana es considerado el peor desastre ambiental en la historia de Brasil y todavía está bajo investigación. Los expertos dicen que las débiles estructuras regulatorias y las brechas regulatorias de Brasil permitieron el fracaso de la presa. Tres años después del colapso de la presa Mariana, las compañías involucradas en ese desastre ambiental han pagado solo el 3,4% de R $ 785 millones en multas. En el momento del desastre de la presa Mariana en noviembre de 2015, el departamento a cargo de inspeccionar las operaciones mineras en el estado de Minas Gerais, el Departamento Nacional de Producción Mineral (DNPM), estaba preocupado por la jubilación de otro 40% de los empleados públicos. el curso de los próximos dos años.
+        <br/>
+        La falla de la presa Brumadinho ocurrió tres años y dos meses después del desastre de la presa Mariana, que mató a 19 personas y destruyó la aldea de Bento Rodrigues. El desastre de Mariana es considerado el peor desastre ambiental en la historia de Brasil y todavía está bajo investigación. Los expertos dicen que las débiles estructuras regulatorias y las brechas regulatorias de Brasil permitieron el fracaso de la presa. Tres años después del colapso de la presa Mariana, las compañías involucradas en ese desastre ambiental han pagado solo el 3,4% de R $ 785 millones en multas. En el momento del desastre de la presa Mariana en noviembre de 2015, el departamento a cargo de inspeccionar las operaciones mineras en el estado de Minas Gerais, el Departamento Nacional de Producción Mineral (DNPM), estaba preocupado por la jubilación de otro 40% de los empleados públicos. el curso de los próximos dos años.
+        <br/>
+        La falla de la presa Brumadinho ocurrió tres años y dos meses después del desastre de la presa Mariana, que mató a 19 personas y destruyó la aldea de Bento Rodrigues. El desastre de Mariana es considerado el peor desastre ambiental en la historia de Brasil y todavía está bajo investigación. Los expertos dicen que las débiles estructuras regulatorias y las brechas regulatorias de Brasil permitieron el fracaso de la presa. Tres años después del colapso de la presa Mariana, las compañías involucradas en ese desastre ambiental han pagado solo el 3,4% de R $ 785 millones en multas. En el momento del desastre de la presa Mariana en noviembre de 2015, el departamento a cargo de inspeccionar las operaciones mineras en el estado de Minas Gerais, el Departamento Nacional de Producción Mineral (DNPM), estaba preocupado por la jubilación de otro 40% de los empleados públicos. el curso de los próximos dos años.
+        <br/>
+        La falla de la presa Brumadinho ocurrió tres años y dos meses después del desastre de la presa Mariana, que mató a 19 personas y destruyó la aldea de Bento Rodrigues. El desastre de Mariana es considerado el peor desastre ambiental en la historia de Brasil y todavía está bajo investigación. Los expertos dicen que las débiles estructuras regulatorias y las brechas regulatorias de Brasil permitieron el fracaso de la presa. Tres años después del colapso de la presa Mariana, las compañías involucradas en ese desastre ambiental han pagado solo el 3,4% de R $ 785 millones en multas. En el momento del desastre de la presa Mariana en noviembre de 2015, el departamento a cargo de inspeccionar las operaciones mineras en el estado de Minas Gerais, el Departamento Nacional de Producción Mineral (DNPM), estaba preocupado por la jubilación de otro 40% de los empleados públicos. el curso de los próximos dos años.
+        <br/>
+        La falla de la presa Brumadinho ocurrió tres años y dos meses después del desastre de la presa Mariana, que mató a 19 personas y destruyó la aldea de Bento Rodrigues. El desastre de Mariana es considerado el peor desastre ambiental en la historia de Brasil y todavía está bajo investigación. Los expertos dicen que las débiles estructuras regulatorias y las brechas regulatorias de Brasil permitieron el fracaso de la presa. Tres años después del colapso de la presa Mariana, las compañías involucradas en ese desastre ambiental han pagado solo el 3,4% de R $ 785 millones en multas. En el momento del desastre de la presa Mariana en noviembre de 2015, el departamento a cargo de inspeccionar las operaciones mineras en el estado de Minas Gerais, el Departamento Nacional de Producción Mineral (DNPM), estaba preocupado por la jubilación de otro 40% de los empleados públicos. el curso de los próximos dos años.
+        <br/>
+        La falla de la presa Brumadinho ocurrió tres años y dos meses después del desastre de la presa Mariana, que mató a 19 personas y destruyó la aldea de Bento Rodrigues. El desastre de Mariana es considerado el peor desastre ambiental en la historia de Brasil y todavía está bajo investigación. Los expertos dicen que las débiles estructuras regulatorias y las brechas regulatorias de Brasil permitieron el fracaso de la presa. Tres años después del colapso de la presa Mariana, las compañías involucradas en ese desastre ambiental han pagado solo el 3,4% de R $ 785 millones en multas. En el momento del desastre de la presa Mariana en noviembre de 2015, el departamento a cargo de inspeccionar las operaciones mineras en el estado de Minas Gerais, el Departamento Nacional de Producción Mineral (DNPM), estaba preocupado por la jubilación de otro 40% de los empleados públicos. el curso de los próximos dos años.
+        <br/>
+        La falla de la presa Brumadinho ocurrió tres años y dos meses después del desastre de la presa Mariana, que mató a 19 personas y destruyó la aldea de Bento Rodrigues. El desastre de Mariana es considerado el peor desastre ambiental en la historia de Brasil y todavía está bajo investigación. Los expertos dicen que las débiles estructuras regulatorias y las brechas regulatorias de Brasil permitieron el fracaso de la presa. Tres años después del colapso de la presa Mariana, las compañías involucradas en ese desastre ambiental han pagado solo el 3,4% de R $ 785 millones en multas. En el momento del desastre de la presa Mariana en noviembre de 2015, el departamento a cargo de inspeccionar las operaciones mineras en el estado de Minas Gerais, el Departamento Nacional de Producción Mineral (DNPM), estaba preocupado por la jubilación de otro 40% de los empleados públicos. el curso de los próximos dos años.
+        <br/>
+        La falla de la presa Brumadinho ocurrió tres años y dos meses después del desastre de la presa Mariana, que mató a 19 personas y destruyó la aldea de Bento Rodrigues. El desastre de Mariana es considerado el peor desastre ambiental en la historia de Brasil y todavía está bajo investigación. Los expertos dicen que las débiles estructuras regulatorias y las brechas regulatorias de Brasil permitieron el fracaso de la presa. Tres años después del colapso de la presa Mariana, las compañías involucradas en ese desastre ambiental han pagado solo el 3,4% de R $ 785 millones en multas. En el momento del desastre de la presa Mariana en noviembre de 2015, el departamento a cargo de inspeccionar las operaciones mineras en el estado de Minas Gerais, el Departamento Nacional de Producción Mineral (DNPM), estaba preocupado por la jubilación de otro 40% de los empleados públicos. el curso de los próximos dos años.
+        <br/>
+        </h3>
+    </section>
+    <aside>
+        <blockquote>Cita del articulo 1</blockquote>
+        <blockquote>Cita del articulo 2</blockquote>
+    </aside>
+    <footer>
+        <address> <a href="www.google.com">Google</a>
+        </address>
+        Todos los derechos reservados
+    </footer>
+</body>
+
+</html>
