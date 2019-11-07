@@ -15,7 +15,37 @@
         border-style: solid;
         border-radius: 10px;
         text-align: center;
+        position: relative;
+        height: 105px;
       }
+
+      div#header1 {
+        
+        position: relative;
+        float: left;
+        width:108px;
+        
+      }
+
+      img {
+        height: 105px;
+        border-radius: 8px;
+      }
+
+
+      div#header2 {
+        size: 10px;
+        float:right;
+        width:590px;
+        height: 100px;
+        line-height: 100px;
+        text-align: left;
+        font-size:larger;
+        font-weight: bold;
+      }
+
+
+
       div#sidebar {
         display: none;
         border: solid 1px #cfc;
@@ -43,6 +73,7 @@
         /*Este estilo coloca el sidebar a la derecha y el main a la izquierda*/
         float: left;
         border: solid 1px #ccc;
+        
         
         
       }
@@ -77,26 +108,31 @@
             
       }
 
-      
+      #sidebar li a:hover {
+            background-color:lightgreen
+      }
+
+      #sidebar li button.active {
+            background-color:red;
+      }
+
+
+
 
     </style>
   </head>
 
   <body class="sidebar-main">
-    <div id="header"><i>Cabecera. RESTAURANTE: El muslito</i></div>
-
+    <div id="header">
+        <div id="header1">
+          <img src="muslito.png">
+        </div>
+        <div id="header2">
+            <i>EL MUSLITO</i></div>
+        </div>
     <div id="body">
       <div id="main">
-        Este restaurante es una de las referencias gastronómicas del esta zona.
-        [...]
-        Este restaurante es una de las referencias gastronómicas del esta zona.
-        [...]
-        Este restaurante es una de las referencias gastronómicas del esta zona.
-        [...]
-        Este restaurante es una de las referencias gastronómicas del esta zona.
-        [...]
-        Este restaurante es una de las referencias gastronómicas del esta zona.
-        [...]
+        <img src="muslito.png">
       </div>
       <div id="sidebar">Menú principal
         <ul>
@@ -106,6 +142,7 @@
         </ul>
       </div>
     </div>
+  </div>
 
     <div id="footer">Pie de página</div>
   </body>
