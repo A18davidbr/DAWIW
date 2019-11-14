@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style>
+	.caja1{
+	width:200px;
+	height:100px;
+	overflow: auto;
+	}
+	.caja2{
+	width:200px;
+	height:100px;
+	overflow: scroll;
+	}
+	.caja3{
+	overflow: hidden;
+	width:200px;
+	height:100px;
+	}
+	.caja4{
+		clip:rect(top right bottom left);
+		display:list-item;
+	}
+	.caja5{
+		position: fixed;
+		left: 50px;
+		top: 600px;
+		width: 500px;
+		z-index: 0;
+		background-color: burlywood;
+	}
+	.caja6{
+		position: fixed;
+		left: 80px;
+		top: 600px;
+		width: 200px;
+		z-index: 1;
+		background-color: chartreuse;
+	}
+</style>
+</head>
+
+<body>
+<div class="caja1">
+  <p>Only for table rows (&lt;tr&gt;), row groups (&lt;tbody&gt;), columns (&lt;col&gt;), column groups (&lt;colgroup&gt;). This value removes a row or column, but it does not affect the table layout. The space taken up by the row or column will be available for other content.<br>
+  </p>
+</div>
+<br>
+<div class="caja2">
+  <p>Only for table rows (&lt;tr&gt;), row groups (&lt;tbody&gt;), columns (&lt;col&gt;), column groups (&lt;colgroup&gt;). This value removes a row or column, but it does not affect the table layout. The space taken up by the row or column will be available for other content.</p>
+</div>
+<br>
+<div class="caja3">
+  <p>Only for table rows (&lt;tr&gt;), row groups (&lt;tbody&gt;), columns (&lt;col&gt;), column groups (&lt;colgroup&gt;). This value removes a row or column, but it does not affect the table layout. The space taken up by the row or column will be available for other content.<br>
+</p></div>
+
+<div class="caja4">
+  <p>probando caja 4 </p>
+  <p>mas cosas</p>
+  <p>hola</p>
+</div>
+
+<div class="caja5">
+	<p>probando caja 5 </p>
+	<p>mas cosas</p>
+	<p>hola</p>
+  </div>
+
+  <div class="caja6">
+	<p>probando caja 6 </p>
+	<p>mas cosas</p>
+	<p>hola</p>
+  </div>
+</body>
+</html>

@@ -2,44 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
-<style>
-
-    .caja1 {
-        position: static;
-        top: 0px;
-    }
-
-    .caja2 {
-        position: static;
-        left: 10px;
-        top: 0px;
-    }
-
-    .caja3 {
-        position: absolute;
-        left: 10px;
-        top: 0px;
-    }
-
-</style>
-
+    <style>
+        .caja1{
+            width: 300px;
+            background-color: #606;
+            color:#ffc;
+            padding: 10px;
+            text-align: center;
+        }
+        .caja2{
+            position: relative;
+            width: 300px;
+            background-color: #066;
+            color:#ffc;
+            padding: 10px;
+            top:100px;
+            left: 30px;
+        }
+    </style>
 </head>
 <body>
-
-    <div class="caja1">
-        hola mundo
+    <h1>NO define posición</h1>
+    <div class="caja1">No define posición, por lo que es static</div>
+    <div class="caja2">Capa de Posicionamiento relative<br>Se tiene en cuenta esta capa para posicionar las siguientes.
     </div>
-
-    <div class="caja2">
-        Adios
-    </div>
+    <h2>La última en ponerse</h2>
     
-    <div class="caja3">
-        Absoluto
-    </div>
 </body>
 </html>
