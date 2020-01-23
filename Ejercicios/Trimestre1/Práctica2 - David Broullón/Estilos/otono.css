@@ -1,0 +1,119 @@
+
+/* CSS Document */
+body {
+	background-color: #F2B705;
+	margin: 0px; /* arregña que no haya márgenes en la página*/
+	
+}
+header{
+	color: wheat;
+	top: 0px;
+	width:100%;
+	height:215px;
+	font-size:20px;
+	text-align:center;
+	padding:25px;
+	background-color: #F27405;
+	margin:0px auto; /*centra el div en la página */
+	display: flex;
+   	justify-content: center;
+   	align-items: center;
+}
+
+.contenido {
+	margin-top: 20px;
+	
+}
+
+nav{
+	
+	font-size: 16px;
+	position: relative;
+	float:left;
+	width: 200px;
+	margin:0px auto;
+	text-align:center;
+	top:0px;
+	display: block;
+	margin-bottom: 20px;
+	z-index:10;
+}
+
+nav ul {
+	
+	list-style-type: none;
+	margin:0px auto;
+	padding: 0px;
+	
+}
+nav li{
+	font-size: 20px;
+	font-weight: 900;
+	border-radius: 10px;
+	box-shadow: black 2px 2px;
+	text-shadow: gold 1px;
+	border-width: thick;	
+	margin: 20px;
+	padding:5px;
+	
+}
+nav li a{
+	text-decoration: none;
+	color: white;
+	
+}
+
+nav li a:hover{
+	transition: text-shadow 1s;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px whitesmoke;
+}
+
+nav li:hover{
+	box-shadow: black 3px 3px;		
+}
+
+
+aside{
+	position: relative;
+	float: right;
+	background-color:#F29F05;
+	width: 85%;
+	text-align: center;
+	color: wheat;
+	z-index: 0;
+	margin-bottom: 100px;
+}
+
+.izquierda{
+	width:100%;
+	background-color:#8C0E03;
+	font-weight: bold;
+}
+
+.derecha{
+	width:100%;
+	background-color:#8C0E03;
+}
+.centro{
+	width:100%;
+	background-color:#8C0E03;
+	
+}
+
+footer{
+	color: wheat;
+	background-color: #F27405;
+	position: sticky;
+	bottom: 0px;
+	margin: 0px;
+	height: 100px;
+	text-align: center;
+	min-width: 100%;
+	/*Coloca el texto en el medio del div */
+	display: flex;
+   	justify-content: center;
+   	align-items: center;
+
+	
+}

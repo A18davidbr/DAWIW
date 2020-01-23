@@ -1,0 +1,121 @@
+
+/* CSS Document */
+body {
+	background-color: white;
+	margin: 0px; /* arregña que no haya márgenes en la página*/
+	
+}
+header{
+	top: 10px;
+	width:90%;
+	height:150px;
+	font-size:30px;
+	text-align:center;
+	padding:5px;
+	background-color:#85AEFF;
+	margin:0px auto; /*centra el div en la página */
+}
+
+nav{
+	width:90%;
+	margin:0px auto;
+	text-align:center;
+	top:0px;
+	position: sticky;
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	z-index:10;
+}
+
+nav ul {
+	list-style-type: none;
+	margin:0px auto;
+	padding: 0px;
+	
+}
+nav li{
+	display:inline;
+	font-size: 20px;
+	font-weight: 900;
+	border-radius: 15px;
+	box-shadow: black 2px 2px;
+	text-shadow: gold 1px;
+	border-width: thick;	
+	margin: 20px;
+	padding:5px;
+	
+}
+nav li a{
+	text-decoration: none;
+	color: white;
+	
+}
+
+nav li a:hover{
+	transition: text-shadow 1s;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px whitesmoke;
+}
+
+nav li:hover{
+	box-shadow: black 3px 3px;		
+}
+
+
+aside{
+	background-color: #E3FAB4;
+	width: 90%;
+	margin: 0px auto;
+	text-align: center;
+	color: white;
+	z-index: 0;
+	/* con las 3 siguientes propiedades hacemos que el contenedor 
+	sea de grande tanto	como lo que contiene */
+	clear: both;
+	overflow: hidden;
+	height: 1%;
+
+}
+
+.izquierda{
+	/* lo mandamos a la izquierda */
+	left:3%;
+	position:relative;
+	float: left;
+	width:30%;
+	background-color:#B36050;
+}
+
+.derecha{
+	/* lo mandamos a la derecha */
+	right:3%;
+	position:relative;
+	float: right;
+	width:30%;
+	background-color:#B36050;
+}
+.centro{
+	width:30%;
+	display:inline-block; /* lo colocamos en el centro*/
+	margin: 0px auto;
+	background-color:#7BAD11;
+	
+}
+
+footer{
+	background-color: #85AEFF;
+	position: sticky;
+	bottom: 0px;
+	margin: 0px;
+	height: 100px;
+	text-align: center;
+	min-width: 100%;
+	
+	/*Coloca el texto en el medio del div */
+	display: flex;
+   	justify-content: center;
+   	align-items: center;
+
+	
+}

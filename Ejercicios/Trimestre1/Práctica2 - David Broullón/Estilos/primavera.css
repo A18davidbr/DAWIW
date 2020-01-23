@@ -1,0 +1,137 @@
+
+/* CSS Document */
+body {
+	background-color: #FDFF7C;
+	margin: 0px; /* arregla que no haya márgenes en la página*/
+	
+}
+header{
+	display: table; /* Para alinear texto verticalmente se le añade esta propiedad a la propiedad padre */
+	width:90%;
+	color: #D95525;
+	height:150px;
+	font-size:30px;
+	text-align:center;
+	padding:5px;
+	background-color:#A2FF7C;
+	margin:0px auto; /*centra el div en la página */
+	margin-top: 10px;
+	border-radius: 15px;
+}
+
+header p {
+	/*Para alinear tecto verticalmente*/
+	display: table-cell; 
+	vertical-align: middle;
+}
+
+nav{
+	width:90%;
+	height: 40px;
+	margin:0px auto;
+	text-align:center;
+	top:12px;
+	position: sticky;
+	z-index:10;
+}
+
+nav ul {
+	text-align: center;
+	list-style-type: none;
+	margin:0px auto;
+	padding: 0px;
+	padding-top: 10px;
+	
+}
+nav li{
+	display:inline;
+	font-size: 16px;
+	font-weight: 900;
+	border-radius: 10px;
+	box-shadow: black 2px 2px;
+	text-shadow: gold 1px;
+	border-width: thick;	
+	margin: 20px;
+	padding:8px;
+	
+}
+nav li a{
+	text-decoration: none;
+	color: white;
+	
+}
+
+nav li a:hover{
+	transition: text-shadow 1s;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px whitesmoke;
+}
+
+nav li:hover{
+	box-shadow: black 3px 3px;		
+}
+
+
+aside{
+	width: 90%;
+	margin: 0px auto;
+	text-align: center;
+	color: white;
+	z-index: 0;
+	/* con las 3 siguientes propiedades hacemos que el contenedor 
+	sea de grande tanto	como lo que contiene */
+	clear: both;
+	overflow: hidden;
+	height: 1%;
+
+}
+
+.izquierda{
+	/* lo mandamos a la izquierda */
+	left:3%;
+	position:relative;
+	float: left;
+	width:31%;
+	background-color:#7BAD11;
+	border-radius: 7px;
+	font-weight: bold;
+}
+
+.derecha{
+	/* lo mandamos a la derecha */
+	right:3%;
+	position:relative;
+	float: right;
+	width:31%;
+	background-color:#7BAD11;
+	border-radius: 7px;
+	font-style: italic;
+	
+}
+.centro{
+	width:30%;
+	display:inline-block; /* lo colocamos en el centro*/
+	margin: 0px auto;
+	background-color:#7BAD11;
+	border-radius: 7px;
+	
+}
+
+footer{
+	background-color: #77F57D;
+	position: sticky;
+	bottom: 0px;
+	margin: 0px;
+	margin-top: 35px;
+	height: 100px;
+	text-align: center;
+	min-width: 100%;
+	font-size: small;
+	
+	/*Coloca el texto en el medio del div */
+	display: flex;
+   	justify-content: center;
+   	align-items: center;
+
+	
+}

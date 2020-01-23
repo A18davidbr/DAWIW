@@ -1,0 +1,133 @@
+
+/* CSS Document */
+body {
+	
+	margin: 0px; /* arregña que no haya márgenes en la página*/
+	background-color: #D8EFFD;
+	/*Para que los divs se rellenen al 100% del heigth*/
+	display: flex;
+    flex-direction: column;
+	
+}
+header{
+	color: #0072BB;
+	top: 0px;
+	width:100%;
+	height:175px;
+	font-size:75px;
+	text-align:center;
+	padding:10px;
+	background-color:#95EEFF;
+	display: flex;
+   	justify-content: center;
+   	align-items: center;
+}
+
+nav{
+	width:100%;
+	margin:0px auto;
+	text-align:center;
+	top:0px;
+	position: sticky;
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	z-index:10;
+	margin-bottom: 15px;
+}
+
+nav ul {
+	
+	list-style-type: none;
+	margin:0px auto;
+	padding: 0px;
+	
+}
+nav li{
+	
+	display:inline;
+	font-size: 16px;
+	font-weight: 900;
+	border-radius: 10px;
+	box-shadow: black 2px 2px;
+	text-shadow: gold 1px;
+	border-width: thick;	
+	margin: 20px;
+	padding:5px;
+	
+}
+nav li a{
+	text-decoration: none;
+	color: white;
+	
+}
+
+nav li a:hover{
+	transition: text-shadow 1s;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px whitesmoke;
+}
+
+nav li:hover{
+	box-shadow: black 3px 3px;		
+}
+
+
+aside{
+	background-color: #0095B3;
+	color: #0072BB;
+	width: 75%;
+	padding: 1px;
+	margin: 0px auto;
+	text-align: center;
+	z-index: 0;
+	margin-bottom: 66px;
+	/* con las 3 siguientes propiedades hacemos que el contenedor 
+	sea de grande tanto	como lo que contiene */
+	clear: both;
+	overflow: hidden;
+	height: 1%;
+
+}
+
+
+
+.izquierda{
+	/* lo mandamos a la izquierda */
+	width:100%;
+	background-color: #44E0FF;
+	font-weight: bold;
+
+}
+
+.derecha{
+	/* lo mandamos a la derecha */
+	width:50%;
+	background-color: #44E0FF;
+	float: right;
+	height:100%;
+
+}
+.centro{
+	width:50%;
+	background-color: #44E0FF;
+	float: left;
+	height:100%;
+}
+
+footer{
+	background-color: #FFC18F;
+	position: sticky;
+	bottom: 0px;
+	margin-top: 35px;
+	height: 100px;
+	text-align: center;
+	font-size: small;
+	
+	/*Coloca el texto en el medio del div */
+	display: flex;
+   	justify-content: center;
+   	align-items: center;
+
+	
+}
