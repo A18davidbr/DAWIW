@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="estilo.css" rel="stylesheet" type="text/css">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+        function Href() {
+            location.href="index.html";
+        }
+    </script>
+
 </head>
 <body>
     
@@ -13,12 +20,12 @@
 
         <form>
             <label for="usuario">Usuario:</label><br>
-            <input type="text" name="usuario" value="DNI">
+            <input type="text" name="usuario" value="">
             <br><br>
             <label for="contraseña">Contraseña:</label><br>
-            <input type="text" name="password" value="**********">
+            <input type="text" name="password" value="">
             <br><br><br>
-            <input type="submit" value="Acceder">
+            <input type="button" onclick="Href()" value="Acceder">
             <input type="button" value="Limpiar">
         </form>
 
