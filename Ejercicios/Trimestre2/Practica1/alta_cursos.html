@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+
+<nav>
+	<ul>
+        <li id='liIzq'><a href="index_acceso.html">Inicio</a></li>
+        <li class="active"><a href="cursos.html" >Cursos</a>
+            <ul>
+                <li><a href="">Listar</a></li>
+                <li><a href="">Modificar</a></li>
+                <li><a href="alta_cursos.html">Alta</a></li>
+                <li><a href="">Baja</a></li>
+            </ul>
+        </li>
+        <li><a href="materias.html">Materias</a>
+            <ul>
+                <li><a href="">Listar</a></li>
+                <li><a href="">Modificar</a></li>
+                <li><a href="">Alta</a></li>
+                <li><a href="">Baja</a></li>
+            </ul>
+        </li>
+        <li><a href="alumnos.html">Alumnos</a>
+            <ul>
+                <li><a href="">Listar</a></li>
+                <li><a href="">Modificar</a></li>
+                <li><a href="">Alta</a></li>
+                <li><a href="">Baja</a></li>
+            </ul>
+        </li>
+        <li id='liDer'><a href="login.html">Acceder</a></li>
+	</ul>
+
+</nav>
+
+
+<body>
+
+    <section>
+        <form>
+                <div class="columnaIzq">
+                    <div class="cajaNombre">
+                        <label>Nombre:</label><br>
+                        <input type="text" name="nombre" tabindex="1">
+                    </div>
+                    <div class="cajaFecha">
+                        <div class="cajaFechaIzq">
+                            <label>Fecha Inicio:</label>
+                            <input type="date" name="fechaInicio" tabindex="2">
+                        </div>
+                        <div class="cajaFechaDer">
+                            <label>Fecha Fin:</label><br>
+                            <input type="date" name="fechaFin" tabindex="3">
+                        </div>
+                    </div>
+                    <div class="cajaHoras">
+                        <div class="cajaHorasIzq">
+                            <label>Num. horas semana</label>
+                            <input type="text" name="numHorasSemana" tabindex="4">
+                        </div>
+                        <div class="cajaHorasDer">
+                            <label>Num. Horas:</label>
+                            <input type="text" name="horas" tabindex="5">
+                        </div>
+                    </div>
+                    <div class="cajaPrecio">
+                        <div class="cajaPrecioIzq">
+                            <label>Precio:</label><br>
+                            <input type="text" name="precio" tabindex="6"><br>
+                        </div>
+                        <div class="cajaPrecioDer">
+                            <label>Num. max. alumnos</label><br>
+                            <input type="text" name="numMaxAlumnos" tabindex="7"><br>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="columnaDer">
+                    <div class="cajaProfesores">
+                        <div class="cajaProfesoresIzq">
+                            <label>Profesor/es:</label><br>
+                            <input type="button" value="Añadir"><br>
+                            <input type="button" value="Quitar">
+                        </div>
+                        <div class="cajaProfesoresDer">
+                            <textarea rows="4" cols="27"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cajaAlta">
+                    <input type="submit" value="Alta" tabindex="9">
+                </div>
+
+        </form>
+
+    </section>
+    
+</body>
+</html>

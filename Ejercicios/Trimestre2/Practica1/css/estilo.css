@@ -1,34 +1,50 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
+    /* font-family: Arial, sans-serif; */
+    font-size: 16px;
     background-color: rgb(235, 233, 233);
     margin: 0px auto;
-    width: 1000px;
+    width: 100%;
 }
 
 nav{
-    
-  }
+    width: 100%;
+    background-color: rgb(248, 244, 232);
+}
 
-ul {
+nav ul {
+    margin-top:0px;
     list-style-type: none;
-    /* Para que quede centrado horizontalmente*/
-    display: flex;
-    justify-content: center;
+    padding: 0px;
+    margin:0px;
 }
 
 #liIzq {
     border-left: 1px solid #bbb;
 }
 
-li {
-    border-right: 1px solid #bbb;
-    width: 320px;
-    background-color: rgb(248, 244, 232);
+#liDer {
+    float: right;
+    border-left: 1px solid #bbb;
+}
+
+nav li {
+    display:inline-block;
+	width:100px;
+	height:30px;
+	padding:5px 5px;
+	background-color: rgb(248, 244, 232);
+	border-right: 1px solid #bbb;
+	text-align:center;
+	position:relative;
+    
 }
 
 li a{
-    padding: 14px 16px;
-    display: block;
-    margin: 10px;
     font-size: 20px;
     text-align: center;
     text-decoration: none;
@@ -49,5 +65,107 @@ li a{
 
 section {
     background-color: rgb(248, 244, 232);
-    
+    width: 700px;
+    margin: 0px auto;
+    margin-top: 50px;
+    padding: 8px;
+    /*Coloca el texto en el medio del div */
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.active {
+    color: white;
+    background-color: rgba(204, 201, 190, 0.842);
+  }
+
+nav li > ul{
+	display:none;
+}
+
+nav li:hover > ul{
+	display:block;
+	position:absolute;
+	top:30px;
+	left:0px;
+}
+
+.etiqueta {
+    width: 150px;
+}
+
+
+.columnaIzq {
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    float: left;
+}
+
+.columnaDer {
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    float: right;
+}
+
+.seccionIzq {
+    margin-bottom: 2px;
+}
+
+.seccionDer {
+    margin-bottom: 2px;
+}
+
+.cajaFechaIzq {
+    clear: both;
+    width: 50%;
+    float: left;
+
+}
+
+.cajaFechaDir {
+    clear: both;
+    width: 50%;
+    float: right;
+}
+
+.cajaHorasIzq {
+    clear: both;
+    width: 50%;
+    float: left;
+}
+
+.cajaHorasDer {
+    width: 50%;
+    float: right;
+}
+
+.cajaPrecioIzq {
+    clear: both;
+    width: 50%;
+    float: left;
+}
+
+.cajaPrecioDer {
+    width: 50%;
+    float: right;
+}
+
+.cajaProfesoresIzq {
+    clear: both;
+    width: 50px;
+    float: left;
+}
+
+.cajaProfesoresDer {
+    width: 220px;
+    float: right;
+}
+
+/* .cajaAlta {
+    margin: 25px;
+    padding: 25px;
+} */
+
