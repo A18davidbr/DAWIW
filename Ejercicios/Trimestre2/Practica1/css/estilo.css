@@ -96,6 +96,7 @@ nav li:hover > ul{
 }
 
 
+
 .columnaIzq {
     margin: 10px;
     padding: 10px;
@@ -112,13 +113,55 @@ nav li:hover > ul{
 
 .seccionIzq {
     margin-bottom: 2px;
+    width: 50%;
+    float: left;
 }
 
 .seccionDer {
     margin-bottom: 2px;
+    width: 50%;
+    float: right;
 }
 
-.cajaFechaIzq {
+.cajaProfesoresIzq {
+    clear: both;
+    width: 50px;
+    float: left;
+}
+
+.cajaProfesoresDer {
+    width: 220px;
+    float: right;
+} 
+
+ .cajaAlta {
+    margin-left: 640px;
+    margin-top: 150px;
+} 
+
+.hidden {
+    visibility: hidden;
+}
+
+input[type=number]{
+    width: 60px;
+} 
+
+
+/* .cajaFecha {
+    clear: both;
+}
+
+.cajaHoras {
+    clear: both;
+}
+
+.cajaPrecio {
+    clear: both;
+} */
+
+
+/* .cajaFechaIzq {
     clear: both;
     width: 50%;
     float: left;
@@ -151,21 +194,6 @@ nav li:hover > ul{
 .cajaPrecioDer {
     width: 50%;
     float: right;
-}
+}*/
 
-.cajaProfesoresIzq {
-    clear: both;
-    width: 50px;
-    float: left;
-}
-
-.cajaProfesoresDer {
-    width: 220px;
-    float: right;
-}
-
-/* .cajaAlta {
-    margin: 25px;
-    padding: 25px;
-} */
 
