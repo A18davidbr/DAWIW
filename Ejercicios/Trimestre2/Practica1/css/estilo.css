@@ -81,21 +81,25 @@ section {
   }
 
 nav li > ul{
-	display:none;
+    display:none;
 }
 
 nav li:hover > ul{
 	display:block;
 	position:absolute;
-	top:30px;
-	left:0px;
+    top:40px;
+    left: -5px;
 }
 
 .etiqueta {
     width: 150px;
 }
 
-
+.caja {
+    margin-bottom: 20px;
+    overflow:auto;
+    
+}
 
 .columnaIzq {
     margin: 10px;
@@ -134,10 +138,6 @@ nav li:hover > ul{
     float: right;
 } 
 
- .cajaAlta {
-    margin-left: 640px;
-    margin-top: 150px;
-} 
 
 .hidden {
     visibility: hidden;
@@ -147,53 +147,28 @@ input[type=number]{
     width: 60px;
 } 
 
-
-/* .cajaFecha {
-    clear: both;
+input {
+    padding:2px;
 }
 
-.cajaHoras {
-    clear: both;
+input[name=altaCursos] {
+    margin-top: 70px;
+    height: 30px;
+    width: 40px;
+    margin-left: 280px;
 }
 
-.cajaPrecio {
-    clear: both;
-} */
-
-
-/* .cajaFechaIzq {
-    clear: both;
-    width: 50%;
-    float: left;
-
+input[name=altaMaterias] {
+    height: 30px;
+    width: 40px;
+    margin-left: 250px;
 }
 
-.cajaFechaDir {
-    clear: both;
-    width: 50%;
-    float: right;
+input[name=altaAlumnos] {
+    height: 30px;
+    width: 40px;
+    margin-left: 217px;
 }
 
-.cajaHorasIzq {
-    clear: both;
-    width: 50%;
-    float: left;
-}
-
-.cajaHorasDer {
-    width: 50%;
-    float: right;
-}
-
-.cajaPrecioIzq {
-    clear: both;
-    width: 50%;
-    float: left;
-}
-
-.cajaPrecioDer {
-    width: 50%;
-    float: right;
-}*/
 
 

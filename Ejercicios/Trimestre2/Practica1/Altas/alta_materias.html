@@ -5,37 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+    <link href="../css/estilo.css" rel="stylesheet" type="text/css">
 </head>
 
 <nav>
 	<ul>
-        <li id='liIzq'><a href="index_acceso.html">Inicio</a></li>
-        <li><a href="cursos.html" >Cursos</a>
+        <li id='liIzq'><a href="../index_acceso.html">Inicio</a></li>
+        <li><a href="../cursos.html" >Cursos</a>
             <ul>
                 <li><a href="">Listar</a></li>
                 <li><a href="">Modificar</a></li>
-                <li><a href="alta_cursos.html">Alta</a></li>
+                <li><a href="./alta_cursos.html">Alta</a></li>
                 <li><a href="">Baja</a></li>
             </ul>
         </li>
-        <li class="active"><a href="materias.html">Materias</a>
+        <li class="active"><a href="../materias.html">Materias</a>
             <ul>
                 <li><a href="">Listar</a></li>
                 <li><a href="">Modificar</a></li>
-                <li><a href="alta_materias.html">Alta</a></li>
+                <li><a href="./alta_materias.html">Alta</a></li>
                 <li><a href="">Baja</a></li>
             </ul>
         </li>
-        <li><a href="alumnos.html">Alumnos</a>
+        <li><a href="../alumnos.html">Alumnos</a>
             <ul>
                 <li><a href="">Listar</a></li>
                 <li><a href="">Modificar</a></li>
-                <li><a href="alta_alumnos.html">Alta</a></li>
+                <li><a href="./alta_alumnos.html">Alta</a></li>
                 <li><a href="">Baja</a></li>
             </ul>
         </li>
-        <li id='liDer'><a href="login.html">Acceder</a></li>
+        <li id='liDer'><a href="../login.html">Acceder</a></li>
 	</ul>
 
 </nav>
@@ -49,32 +49,32 @@
                     <div class="caja">
                         <div class="seccionIzq">
                             <label>Nombre:</label><br>
-                            <input type="text" name="nombre" tabindex="1">
+                            <input type="text" name="nombre" size="15" tabindex="1">
                         </div>
                         <div class="seccionDer">
                             <label>Código:</label><br>
-                            <input type="text" name="codigo" tabindex="2">
+                            <input type="text" name="codigo" size="15" tabindex="2">
                         </div>
                     </div>
                     
                     <div class="caja">
                         <div class="seccionIzq">
-                            <label>Num. horas semana</label>
-                            <input type="text" name="numHorasSemana" tabindex="5">
+                            <label>Num. h. semana</label>
+                            <input type="text" name="numHorasSemana" size="15" tabindex="5">
                         </div>
                         <div class="seccionDer">
-                            <label>Num. Horas:</label>
-                            <input type="text" name="horas" tabindex="6">
+                            <label>Num. h. total:</label>
+                            <input type="text" name="horas" size="15" tabindex="6">
                         </div>
                     </div>
                     <div class="caja">
                         <div class="seccionIzq">
                             <label>Profesor:</label><br>
-                            <input type="text" name="precio" tabindex="7"><br>
+                            <input type="text" name="precio" size="15" tabindex="7"><br>
                         </div>
                         <div class="seccionDer">
-                            <label>Num. max. alumnos</label><br>
-                            <input type="text" name="numMaxAlumnos" tabindex="8"><br>
+                            <label>Max. alumn</label><br>
+                            <input type="number" name="numMaxAlumnos" tabindex="8"><br>
                         </div>
                     </div>
                     
@@ -104,7 +104,7 @@
                 </div>
 
                 <div class="cajaAlta">
-                    <input type="submit" value="Alta" tabindex="9">
+                    <input type="submit" value="Alta" name="altaMaterias" tabindex="9">
                 </div>
 
         </form>
