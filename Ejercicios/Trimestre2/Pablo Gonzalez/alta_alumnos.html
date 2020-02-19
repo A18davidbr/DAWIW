@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aplicacion WEB</title>
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+<nav>
+    <ul>
+        <li class="active" id='acceso'><a href="acceso.html">Inicio</a></li>
+        <li>Cursos
+            <ul>
+                <li><a href="cursos.html">Listar</a></li>
+                <li><a href="alta_cursos.html">Alta</a></li>
+            </ul>
+        </li>
+        <li>Materias
+            <ul>
+                <li><a href="materias.html">Listar</a></li>
+                <li><a href="alta_materias.html">Alta</a></li>
+            </ul>
+        </li>
+        <li>Alumnos
+            <ul>
+                <li><a href="alumnos.html">Listar</a></li>
+                <li><a href="alta_alumnos.html">Alta</a></li>
+            </ul>
+        </li>
+        <li id='acceso2'><a href="login.html">Invitado</a></li>
+    </ul>
+</nav>
+
+
+<body>
+    <div class="titulo"> Alta Alumno </div>
+    <section>
+        <form>
+            <div class="columnaIzq">
+                <div class="caja">
+                    <div class="seccionIzq">
+                        <div>
+                            <label>Nombre:</label>
+                        </div>
+                        <div>
+                            <input type="text" name="nombre" tabindex="1" required placeholder="Nombre">
+                        </div>
+                    </div>
+                    <div class="seccionDer">
+                        <div>
+                            <label>Apellidos:</label>
+                        </div>
+                        <div>
+                            <input type="text" name="apellidos" tabindex="2" required placeholder="Apellidos">
+                        </div>
+                    </div>
+                </div>
+                <div class="caja">
+                    <div class="seccionIzq">
+                        <div>
+                            <label>Dirección:</label>
+                        </div>
+                        <div>
+                            <input type="text" name="direccion" tabindex="5" required placeholder="Dirección">
+                        </div>
+                    </div>
+                    <div class="seccionDer">
+                        <div>
+                            <label>Población:</label>
+                        </div>
+                        <div>
+                            <input type="text" name="poblacion" tabindex="6" required placeholder="Poblacion">
+                        </div>
+                    </div>
+                </div>
+                <div class="caja">
+                    <div class="seccionIzq">
+                        <div>
+                            <label>Cóigo Postal:</label>
+                        </div>
+                        <div>
+                            <input type="number" name="cp" tabindex="7" min="0" step="1" required placeholder="0"
+                                pattern="((0[1-9]|5[0-2])|[1-4][0-9])[0-9]{3}">
+                        </div>
+                    </div>
+                    <div class="seccionDer">
+                        <div>
+                            <label>Provincia:</label>
+                        </div>
+                        <div>
+                            <input type="text" name="provincia" tabindex="8" required placeholder="Provincia">
+                        </div>
+                    </div>
+                </div>
+                <div class="caja">
+                    <div class="seccionIzq">
+                        <div>
+                            <label>Teléfono Fijo:</label>
+                        </div>
+                        <div>
+                            <input type="tel" name="tlf" tabindex="2" required pattern="[0-9]{9}"
+                                placeholder="600000000">
+                        </div>
+                    </div>
+                    <div class="seccionDer">
+                        <div>
+                            <label>Teléfono Móvil:</label>
+                        </div>
+                        <div>
+                            <input type="tel" name="fecha2ev" tabindex="2" pattern="[0-9]{9}" placeholder="900000000">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columnaDer">
+                <div class="caja">
+                    <div class="seccionIzq">
+                        <div>
+                            <label>Fecha Nacimiento:</label>
+                        </div>
+                        <div>
+                            <input type="date" name="fechaNac" tabindex="3" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="caja">
+                    <div class="seccionIzq">
+                        <div>
+                            <label>Notas:</label>
+                        </div>
+                        <div>
+                            <textarea rows="5" cols="27"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cajaAlta">
+                <button type="submit" tabindex="10">Dar Alta</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

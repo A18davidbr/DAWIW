@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aplicacion WEB</title>
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+
+<script>
+    function limpiar() {
+        href = "index.html";
+    }
+</script>
+
+<nav>
+    <ul>
+        <li class="active" id='acceso'><a href="index.html">Inicio</a></li>
+        <li id='acceso2'><a href="login.html">Acceder</a></li>
+    </ul>
+</nav>
+
+<body>
+    <div class="login">
+        <form action="acceso.html" method="post">
+            <div>
+                <div>
+                    <label for="user"><b>Usuario</b></label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Usuario" name="user" required>
+                </div>
+                <div>
+                    <label for="pass"><b>Contraseña</b></label>
+                </div>
+                <div>
+                    <input type="password" placeholder="Contraseña" name="pass" required>
+                </div>
+                <div>
+                    <button type="submit">Acceder</button>
+                    <button type="button" class="cancelbtn" onclick="limpiar()"></a>Cancelar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

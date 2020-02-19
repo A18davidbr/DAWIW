@@ -11,25 +11,25 @@
 <nav>
 	<ul>
         <li id='liIzq'><a href="../index_acceso.html">Inicio</a></li>
-        <li class="active"><a href="../cursos.html" >Cursos</a>
+        <li class="active"><a href="../Listados/list_cursos.html" >Cursos</a>
             <ul>
-                <li><a href="">Listar</a></li>
+                <li><a href="../Listados/list_cursos.html">Listar</a></li>
                 <li><a href="">Modificar</a></li>
                 <li><a href="./alta_cursos.html">Alta</a></li>
                 <li><a href="">Baja</a></li>
             </ul>
         </li>
-        <li><a href="../materias.html">Materias</a>
+        <li><a href="../Listados/list_materias.html">Materias</a>
             <ul>
-                <li><a href="">Listar</a></li>
+                <li><a href="../Listados/list_materias.html">Listar</a></li>
                 <li><a href="">Modificar</a></li>
                 <li><a href="./alta_materias.html">Alta</a></li>
                 <li><a href="">Baja</a></li>
             </ul>
         </li>
-        <li><a href="../alumnos.html">Alumnos</a>
+        <li><a href="../Listados/list_alumnos.html">Alumnos</a>
             <ul>
-                <li><a href="">Listar</a></li>
+                <li><a href="../Listados/list_alumnos.html">Listar</a></li>
                 <li><a href="">Modificar</a></li>
                 <li><a href="./alta_alumnos.html">Alta</a></li>
                 <li><a href="">Baja</a></li>
@@ -62,12 +62,12 @@
                     </div>
                     <div class="caja">
                         <div class="seccionIzq">
-                            <label>Num. Horas semana</label>
-                            <input type="text" name="numHorasSemana" size="16" tabindex="4">
+                            <label>Horas semana:</label><br>
+                            <input type="number" name="numHorasSemana" size="16" tabindex="4">
                         </div>
                         <div class="seccionDer">
-                            <label>Num. Horas:</label>
-                            <input type="text" name="horas" size="16" tabindex="5">
+                            <label>Num Horas:</label><br>
+                            <input type="number" name="horas" size="16" tabindex="5">
                         </div>
                     </div>
                     <div class="caja">
@@ -89,16 +89,16 @@
                             
                         </div>
                         <div class="cajaProfesoresDer">
-                            <textarea rows="4" cols="25"></textarea>
-                            <input type="button" value="Añadir">
-                            <input type="button" value="Quitar">
+                            <textarea rows="4" cols="25" tabindex="9"></textarea>
+                            <input type="button" value="Añadir" tabindex="10">
+                            <input type="button" value="Quitar" tabindex="11">
                         </div>
                     </div>
 
                 </div>
 
                 <div class="cajaAlta">
-                    <input type="submit" name="altaCursos" value="Alta" tabindex="9">
+                    <input type="submit" name="altaCursos" value="Alta" tabindex="12">
                 </div>
 
         </form>

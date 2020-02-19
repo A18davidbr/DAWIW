@@ -11,25 +11,25 @@
 <nav>
 	<ul>
         <li id='liIzq'><a href="../index_acceso.html">Inicio</a></li>
-        <li><a href="../cursos.html" >Cursos</a>
+        <li><a href="../Listados/list_cursos.html" >Cursos</a>
             <ul>
-                <li><a href="">Listar</a></li>
+                <li><a href="../Listados/list_cursos.html">Listar</a></li>
                 <li><a href="">Modificar</a></li>
                 <li><a href="./alta_cursos.html">Alta</a></li>
                 <li><a href="">Baja</a></li>
             </ul>
         </li>
-        <li><a href="../materias.html">Materias</a>
+        <li><a href="../Listados/list_materias.html">Materias</a>
             <ul>
-                <li><a href="">Listar</a></li>
+                <li><a href="../Listados/list_materias.html">Listar</a></li>
                 <li><a href="">Modificar</a></li>
                 <li><a href="./alta_materias.html">Alta</a></li>
                 <li><a href="">Baja</a></li>
             </ul>
         </li>
-        <li class="active"><a href="../alumnos.html">Alumnos</a>
+        <li class="active"><a href="../Listados/list_alumnos.html">Alumnos</a>
             <ul>
-                <li><a href="">Listar</a></li>
+                <li><a href="../Listados/list_alumnos.html">Listar</a></li>
                 <li><a href="">Modificar</a></li>
                 <li><a href="./alta_alumnos.html">Alta</a></li>
                 <li><a href="">Baja</a></li>
@@ -60,33 +60,35 @@
                 <div class="caja">
                     <div class="seccionIzq">
                         <label>Población:</label>
-                        <input type="text" name="poblacion"  size="15" tabindex="6">
+                        <input type="text" name="poblacion"  size="15" tabindex="3">
                     </div>
                     <div class="seccionDer">
                         <label>Dirección:</label>
-                        <input type="text" name="direccion"tabindex="5">
+                        <input type="text" name="direccion"tabindex="4">
                         
                     </div>
                 </div>
                 <div class="caja">
                     <div class="seccionIzq">
                         <label>CP:</label><br>
-                        <input type="text" name="cp"  size="15" tabindex="7"><br>
+                        <input type="text" name="cp"  size="15" pattern="[0-9]{5}" tabindex="5"><br>
                     </div>
                     <div class="seccionDer">
                         <label>Provincia:</label><br>
-                        <input type="text" name="provincia" tabindex="8"><br>
+                        <input type="text" name="provincia" tabindex="6"><br>
                     </div>
-                    <div class="caja">
+                </div>
+                <div class="caja">
                         <div class="seccionIzq">
-                            <label>Tlf:</label>
-                            <input type="text" name="tlf" tabindex="2">
+                            <label>Tlf:</label><br>
+                            <input type="tel" name="tlf" pattern="[0-9]{9}" size="15" tabindex="7">
                         </div>
                         <div class="seccionDer">
                             <label>Tlf. Móvil</label>
-                            <input type="text" name="fecha2ev" tabindex="2">
+                            <input type="tel" name="tlfmovil"  pattern="[0-9]{9}" tabindex="8">
                         </div>
                     </div>
+
                 </div>
                 
             </div>
@@ -94,24 +96,24 @@
                 <div class="caja">
                     <div class="seccionIzq">
                         <label>Fecha Nacimiento</label>
-                        <input type="date" name="fechaNac" tabindex="2">
+                        <input type="date" name="fechaNac" tabindex="9">
                     </div>
                     <div class="seccionDer hidden">
                         <label>sadasd</label>
-                        <input type="date" name="fechaNac" tabindex="2">
+                        <input type="date" name="fechaNac" >
                     </div>
                 </div>
                 <div class="caja">
                     <div class="seccionIzq">
                         <label>Notas:</label>
-                        <textarea rows="4" cols="27"></textarea>
+                        <textarea rows="4" cols="27" tabindex="10"></textarea>
                     </div>
                 </div>
 
             </div>
 
             <div class="cajaAlta">
-                <input type="submit" value="Alta" name="altaAlumnos" tabindex="9">
+                <input type="submit" value="Alta" name="altaAlumnos" tabindex="11">
             </div>
 
     </form>

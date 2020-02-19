@@ -3,6 +3,35 @@
     margin: 0px;
 }
 
+.titulo {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+th,td {
+    top:0px;
+    border-bottom: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    vertical-align: middle;
+    text-align: left;
+    padding: 8px;
+    
+}
+
+.lasttr {
+    border-bottom: 0;
+}
+
+.lasttd {
+    border-right: 0;
+}
+
+th {
+    padding-bottom: 10px;
+}
+
 body {
     /* font-family: Arial, sans-serif; */
     font-size: 16px;
@@ -61,6 +90,19 @@ li a{
     display: flex;
    	justify-content: center;
    	align-items: center;
+}
+
+.seccionListas {
+    background-color: rgb(248, 244, 232);
+    width: 700px;
+    margin: 0px auto;
+    margin-top: 50px;
+    padding: 8px;
+    /*Coloca el texto en el medio del div */
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
 }
 
 section {

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aplicacion WEB</title>
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+
+<nav>
+    <ul>
+        <li class="active" id='acceso'><a href="acceso.html">Inicio</a></li>
+        <li>Cursos
+            <ul>
+                <li><a href="cursos.html">Listar</a></li>
+                <li><a href="alta_cursos.html">Alta</a></li>
+            </ul>
+        </li>
+        <li>Materias
+            <ul>
+                <li><a href="materias.html">Listar</a></li>
+                <li><a href="alta_materias.html">Alta</a></li>
+            </ul>
+        </li>
+        <li>Alumnos
+            <ul>
+                <li><a href="alumnos.html">Listar</a></li>
+                <li><a href="alta_alumnos.html">Alta</a></li>
+            </ul>
+        </li>
+        <li id='acceso2'><a href="login.html">Invitado</a></li>
+    </ul>
+</nav>
+<body>
+    <div class="titulo"> Alta Materia </div>
+    <section class="section">
+        <form>
+            <div class="columnaIzq">
+                <div class="caja">
+                    <div class="seccionIzq">
+                        <div>
+                            <label>Nombre:</label>
+                        </div>
+                        <div>
+                            <input type="text" name="nombre" tabindex="1" size="35px" required
+                                placeholder="Nombre Materia">
+                        </div>
+                    </div>
+                    <div class="seccionDer">
+                        <div>
+                            <label>Código:</label>
+                        </div>
+                        <div>
+                            <input type="text" name="codigo" tabindex="2" size="35px" required
+                                placeholder="Código Materia">
+                        </div>
+                    </div>
+                </div>
+                <div class="caja">
+                    <div class="seccionIzq">
+                        <div>
+                            <label>Horas semanales:</label>
+                        </div>
+                        <div>
+                            <input type="number" name="numHorasSemana" tabindex="5" size="35px" min="0" step="1"
+                                required placeholder="0">
+                        </div>
+                    </div>
+                    <div class="seccionDer">
+                        <div>
+                            <label>Horas totales:</label>
+                        </div>
+                        <div>
+                            <input type="number" name="horas" tabindex="6" size="35px" min="0" step="1" required
+                                placeholder="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="caja">
+                    <div class="seccionIzq">
+                        <div>
+                            <label>Profesor:</label>
+                        </div>
+                        <div>
+                            <input type="text" name="precio" tabindex="9" required placeholder="Nombre Profesor">
+                        </div>
+                    </div>
+                    <div class="seccionDer">
+                        <div>
+                            <label>Máximo alumnos:</label>
+                        </div>
+                        <div>
+                            <input type="number" name="numMaxAlumnos" tabindex="10" min="0" step="1" required
+                                placeholder="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columnaDer">
+                <div class="caja">
+                    <div class="seccionIzq">
+                        <div>
+                            <label>1ª evaluación:</label>
+                        </div>
+                        <div>
+                            <input type="date" name="fecha1ev" tabindex="3">
+                        </div>
+                    </div>
+                    <div class="seccionDer">
+                        <div>
+                            <label>2ª evaluación:</label>
+                        </div>
+                        <div>
+                            <input type="date" name="fecha2ev" tabindex="4">
+                        </div>
+                    </div>
+                </div>
+                <div class="caja">
+                    <div class="seccionIzq">
+                        <div>
+                            <labdel>3ª evaluación:</labdel>
+                        </div>
+                        <div>
+                            <input type="date" name="fecha3ev" tabindex="7">
+                        </div>
+                    </div>
+                    <div class="seccionDer">
+                        <div>
+                            <label>Examen final:</label>
+                        </div>
+                        <div>
+                            <input type="date" name="fechaExFinal" tabindex="8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cajaAlta">
+                <button type="submit" tabindex="11">Dar Alta</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

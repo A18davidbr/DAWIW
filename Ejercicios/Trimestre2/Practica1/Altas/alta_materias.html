@@ -11,25 +11,25 @@
 <nav>
 	<ul>
         <li id='liIzq'><a href="../index_acceso.html">Inicio</a></li>
-        <li><a href="../cursos.html" >Cursos</a>
+        <li><a href="../Listados/list_cursos.html" >Cursos</a>
             <ul>
-                <li><a href="">Listar</a></li>
+                <li><a href="../Listados/list_cursos.html">Listar</a></li>
                 <li><a href="">Modificar</a></li>
                 <li><a href="./alta_cursos.html">Alta</a></li>
                 <li><a href="">Baja</a></li>
             </ul>
         </li>
-        <li class="active"><a href="../materias.html">Materias</a>
+        <li class="active"><a href="../Listados/list_materias.html">Materias</a>
             <ul>
-                <li><a href="">Listar</a></li>
+                <li><a href="../Listados/list_materias.html">Listar</a></li>
                 <li><a href="">Modificar</a></li>
                 <li><a href="./alta_materias.html">Alta</a></li>
                 <li><a href="">Baja</a></li>
             </ul>
         </li>
-        <li><a href="../alumnos.html">Alumnos</a>
+        <li><a href="../Listados/list_alumnos.html">Alumnos</a>
             <ul>
-                <li><a href="">Listar</a></li>
+                <li><a href="../Listados/list_alumnos.html">Listar</a></li>
                 <li><a href="">Modificar</a></li>
                 <li><a href="./alta_alumnos.html">Alta</a></li>
                 <li><a href="">Baja</a></li>
@@ -45,69 +45,69 @@
 
     <section>
         <form>
-                <div class="columnaIzq">
-                    <div class="caja">
-                        <div class="seccionIzq">
-                            <label>Nombre:</label><br>
-                            <input type="text" name="nombre" size="15" tabindex="1">
-                        </div>
-                        <div class="seccionDer">
-                            <label>Código:</label><br>
-                            <input type="text" name="codigo" size="15" tabindex="2">
-                        </div>
+            <div class="columnaIzq">
+                <div class="caja">
+                    <div class="seccionIzq">
+                        <label>Nombre:</label><br>
+                        <input type="text" name="nombre" size="15" tabindex="1">
                     </div>
-                    
-                    <div class="caja">
-                        <div class="seccionIzq">
-                            <label>Num. h. semana</label>
-                            <input type="text" name="numHorasSemana" size="15" tabindex="5">
-                        </div>
-                        <div class="seccionDer">
-                            <label>Num. h. total:</label>
-                            <input type="text" name="horas" size="15" tabindex="6">
-                        </div>
+                    <div class="seccionDer">
+                        <label>Código:</label><br>
+                        <input type="text" name="codigo" size="15" tabindex="2">
                     </div>
-                    <div class="caja">
-                        <div class="seccionIzq">
-                            <label>Profesor:</label><br>
-                            <input type="text" name="precio" size="15" tabindex="7"><br>
-                        </div>
-                        <div class="seccionDer">
-                            <label>Max. alumn</label><br>
-                            <input type="number" name="numMaxAlumnos" tabindex="8"><br>
-                        </div>
-                    </div>
-                    
                 </div>
-                <div class="columnaDer">
-                    <div class="caja">
-                        <div class="seccionIzq">
-                            <label>Fecha 1ª ev.</label>
-                            <input type="date" name="fecha1ev" tabindex="2">
-                        </div>
-                        <div class="seccionDer">
-                            <label>Fecha 2ª ev.</label>
-                            <input type="date" name="fecha2ev" tabindex="2">
-                        </div>
+                
+                <div class="caja">
+                    <div class="seccionIzq">
+                        <label>Horas semana:</label><br>
+                        <input type="number" name="numHorasSemana" tabindex="3">
                     </div>
-                    <div class="caja">
-                        <div class="seccionIzq">
-                            <label>Fecha 3ª ev.</label>
-                            <input type="date" name="fecha3ev" tabindex="2">
-                        </div>
-                        <div class="seccionDer">
-                            <label>Fecha ex.final</label>
-                            <input type="date" name="fechaExFinal" tabindex="2">
-                        </div>
+                    <div class="seccionDer">
+                        <label>Num horas:</label><br>
+                        <input type="number" name="horas" tabindex="4">
                     </div>
-
+                </div>
+                <div class="caja">
+                    <div class="seccionIzq">
+                        <label>Profesor:</label><br>
+                        <input type="text" name="precio" size="15" tabindex="5"><br>
+                    </div>
+                    <div class="seccionDer">
+                        <label>Max. alumnos:</label><br>
+                        <input type="number" name="numMaxAlumnos" max="25" tabindex="6"><br>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="columnaDer">
+                <div class="caja">
+                    <div class="seccionIzq">
+                        <label>Fecha 1ª ev.</label>
+                        <input type="date" name="fecha1ev" tabindex="7">
+                    </div>
+                    <div class="seccionDer">
+                        <label>Fecha 2ª ev.</label>
+                        <input type="date" name="fecha2ev" tabindex="8">
+                    </div>
+                </div>
+                <div class="caja">
+                    <div class="seccionIzq">
+                        <label>Fecha 3ª ev.</label>
+                        <input type="date" name="fecha3ev" tabindex="9">
+                    </div>
+                    <div class="seccionDer">
+                        <label>Fecha ex.final</label>
+                        <input type="date" name="fechaExFinal" tabindex="10">
+                    </div>
                 </div>
 
-                <div class="cajaAlta">
-                    <input type="submit" value="Alta" name="altaMaterias" tabindex="9">
-                </div>
+            </div>
 
-        </form>
+            <div class="cajaAlta">
+                <input type="submit" value="Alta" name="altaMaterias" tabindex="11">
+            </div>
+
+    </form>
 
     </section>
     
